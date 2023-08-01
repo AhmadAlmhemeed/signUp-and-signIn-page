@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-in">
+            <h1 id="signIn">Sign In</h1>
+            <form action="">
+                <div class="inp">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="inp">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Your Password">
+                </div>
+                <div class="check-box">
+                    <div class="check">
+                        <input type="checkbox" name="" id="">
+                        <span>Remember Me</span>
+                    </div>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+                <button>Login</button>
+            </form>
+        </div>
+
+        <div class="sign-up">
+            <h1 id="signUp">Sign Up</h1>
+            <form action="">
+                <div class="inp">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter Your name">
+                </div>
+                <div class="inp">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="inp">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Your Password">
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        let btnSignIn = document.getElementById('signIn');
+        let btnSignUP = document.getElementById('signUp');
+        let signUpForm = document.querySelector('.sign-up');
+        btnSignUP.onclick = ()=>{
+            signUpForm.classList.add('active');
+        }
+        btnSignIn.onclick = ()=>{
+            signUpForm.classList.remove('active');
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/7ba87a9790.js" crossorigin="anonymous"></script>
+</body>
+</html>

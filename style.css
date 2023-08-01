@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #273e50;
+}
+.container{
+    width: 350px;
+    background: url("#");
+    background-size: cover;
+    background-position: center;
+    padding: 45px 50px 140px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 40px #000000bd;
+    position: relative;
+    overflow: hidden;
+    transform: 0.4s;
+
+
+}
+.container h1{
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: pointer;
+
+}
+form{
+    text-align: center;
+}
+form .inp{
+    margin: 5px 0 20px;
+    position: relative;
+}
+form .inp input{
+    width: 100%;
+    padding: 10px 5px 10px 35px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+form .inp i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #4db6fc;
+}
+form .check-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .check-box .check{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+form .check-box .check span{
+    font-size: 13px;
+    color: #fff;
+}
+form .check-box .forgot{
+    color: #fff;
+    font-size: 14px;
+
+}
+form button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4db6fc;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #4db6fc;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+form button:hover{
+    background-color: #fff;
+    color: #4db6fc;
+}
+.sign-up{
+    position: absolute;
+    top: calc(100% - 75px);
+    left: 0;
+    width: 350px;
+    background-color: #fff;
+    padding: 20px 50px 100px;
+    border-radius: 60%/10%;
+    transition: all .8s ease-in-out;
+}
+.sign-up.active{
+    top: 90px;
+}
+.sign-up h1{
+    color: #4db6fc;
+}
+.sign-up form .inp input{
+    background-color: #e6ebf0;
+}
